@@ -22,7 +22,7 @@ tables** and **fact tables** for specific business metrics.
 
 2. gold_dim_products
    - **Purpose**: provides information about the product and their attributes.
-   - **Columns**
+   - **Columns**:
   **Column Name**        |  **Data Type**    	 |  **Description**                                                                                              
  product_key          	 |  INT          	     |  Surrogate key uniquely identifying each product record in the product dimension table                     
  product_id           	 |  INT          	     |  Unique identifier assigned to the product for internal tracking and referencing                           
