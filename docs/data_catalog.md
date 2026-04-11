@@ -8,6 +8,7 @@ tables** and **fact tables** for specific business metrics.
 1. gold.dim_customers
   - **Purpose**: Stores customer details enriched with demographic and geographic data.
   - **Columns**:
+    
  **Column Name**   |  **Data Type**  |  **Description**                                                                                     
  customer_key    	 |  INT          	 |  Surrogate key uniquely identifying each customer record in the customer dimension table         
  customer_id     	 |  INT          	 |  Unique numerical identifier assigned to each customer                                           
@@ -23,6 +24,7 @@ tables** and **fact tables** for specific business metrics.
 2. gold_dim_products
    - **Purpose**: provides information about the product and their attributes.
    - **Columns**:
+     
   **Column Name**        |  **Data Type**    	 |  **Description**                                                                                              
  product_key          	 |  INT          	     |  Surrogate key uniquely identifying each product record in the product dimension table                     
  product_id           	 |  INT          	     |  Unique identifier assigned to the product for internal tracking and referencing                           
@@ -38,7 +40,8 @@ tables** and **fact tables** for specific business metrics.
 
 3. gold_fact_sales
    - **Purpose**: stores transactional sales data for analytical purposes.
-   - **Columns**:                                                                                   |
+   - **Columns**:
+                                                                                     |
  **Column Name**   |	 **Data Type**   | 	 **Description**                                                                                    
  order_number  	   |  NVARCHAR(50) 	   |  Unique alphanumeric identifier for each sales order (e.g., SO54496)                            
  product_key   	   |  INT          	   |  Surrogate key linking the order to the product dimension table                                 
